@@ -4,6 +4,7 @@
     text-align: center;
     margin-top: 80px;
     font-family: 'Lucida Handwriting', cursive, serif;
+    text-shadow: #04410c80 4px 4px 7px;
 }
 
 body {
@@ -60,10 +61,11 @@ hr {
     margin: 30px 0;
 }
 
+/*
 .green-box {
   background-color: #03ff42;
   width: 1400px;
-  margin-left: 125px;
+  
   padding: 20px;
   font-size: 20px;
   font-family: sans-serif;
@@ -74,6 +76,68 @@ hr {
 }
 
 .text-block {
-  width: 1300px;           /* omezená šířka textu */
+  width: 1300px;           
+  text-align: left;
+}
+
+.green-box-right {
+    background-color: #03ff42;
+    
+    
+    padding-right: 100px;
+    font-size: 20px;
+    font-family: sans-serif;
+    height: 400px;
+    
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .text-block-right {
+    width: 1300px;           
+    text-align: left;
+    padding: 20px;
+  }
+
+  .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1100px;
+  margin-left: 125px;
+  
+}
+*/
+.container {
+  display: flex;
+  padding-left: 125px;
+  padding-right: 125px;
+  gap: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.green-box {
+  background-color: #03ff42;
+  flex: 2; /* zabírá 2/3 šířky */
+  padding: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  height: 750px; /* větší výška */
+}
+
+.green-box-right {
+  background-color: #03ff42;
+  flex: 1; /* zabírá 1/3 šířky */
+  padding: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  height: 750px; /* stejná výška jako levý box */
+}
+
+.text-block,
+.text-block-right {
+  padding: 20px;
   text-align: left;
 }
