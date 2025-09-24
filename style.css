@@ -134,6 +134,7 @@ hr {
   font-size: 20px;
   font-family: sans-serif;
   height: 750px; /* stejná výška jako levý box */
+  max-height: 750px;
 }
 
 .text-block,
@@ -141,3 +142,13 @@ hr {
   padding: 20px;
   text-align: left;
 }
+
+.image-grid img {
+  width: 40%;
+  
+  height: auto;
+  
+  border: 2px solid #000;
+  
+}           
+  
